@@ -20,6 +20,10 @@ public class Main {
         System.out.println(iter.next());
         System.out.println(iter.next());
         System.out.println(iter.hasNext());
-        System.out.println(iter.next());
+//        System.out.println(iter.next());
+        iter.remove();
+        for (String i : array){
+            System.out.print(i+" ");
+        }
     }
 }

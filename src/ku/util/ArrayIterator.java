@@ -20,6 +20,11 @@ public class ArrayIterator<T> implements Iterator<T> {
      */
     private int count;
 
+    {
+
+
+    }
+
     /**
      * Initialize a new array iterator with the array to process.
      *
@@ -58,12 +63,15 @@ public class ArrayIterator<T> implements Iterator<T> {
         throw new NoSuchElementException();
     }
 
+
     /**
      * remove operation is not supported in this collection.
      */
     @Override
     public void remove() {
-        array[count - 1] = null;
+        if (this.array.length != 0 && array[count - 1] != null)
+            array[count - 1] = null;
+        else throw new IllegalStateException();
     }
 
 }
