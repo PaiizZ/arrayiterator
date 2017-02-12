@@ -20,11 +20,6 @@ public class ArrayIterator<T> implements Iterator<T> {
      */
     private int count;
 
-    {
-
-
-    }
-
     /**
      * Initialize a new array iterator with the array to process.
      *
